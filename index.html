@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<style>
+    body {
+        margin: 0;
+    }
+        
+    ul {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+    }
+
+
+    a {
+        display:block;
+        padding: 10px;
+        text-decoration:none;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        color: black;
+    }
+
+    .floatleft {
+        float: left;
+        margin-top: 10px;
+    }
+
+    .about {
+        float: left;
+        margin-left: 20px;
+        margin-top: 10px;
+    }
+
+    .floatright {
+        float:right;
+        margin-top: 10px;
+    }
+
+    
+
+    .rightnavicons {
+        margin-top: 10px;
+        padding: 5px 10px;
+        float:right;
+    }
+
+    .profile {
+        margin-top: 10px;
+        padding: 5px 10px;
+        margin-right: 20px;
+        float:right;
+    }
+
+    .centre {
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        height: 35vh;
+    }
+
+    .foogle {
+        max-width: 100%;
+        height: 135px;
+        margin-bottom: 15px;
+    }
+
+    .searchbar {
+        width: 550px;
+        height: 37px;
+        border-radius: 24px;
+        border: none;
+        outline: none;
+        margin-left: 40px;
+        
+    }
+
+    .search {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        width: 600px;
+        height: 40px;
+        border-radius: 24px;
+        border: 1px solid #dfe1e5;
+        position: relative;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search:hover{
+        background-color: #fff;
+        box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+        border-color: rgba(223,225,229,0);
+    }
+
+    .searchicon {
+        position: absolute;
+        left: 20px;
+       
+    }
+
+    .mic {
+        position: absolute;
+        right: 20px;
+    }
+
+
+
+    .btn {
+        margin-top: 10px;
+        display:flex;
+        justify-content: center;
+    }
+
+    .btnimage {
+        margin: 2em;
+        background-color: #f8f9fa;
+        border: 1px solid #f8f9fa;
+        border-radius: 4px;
+        font-family: arial,sans-serif;
+        height: 36px;
+        color: #3c4043;
+        margin: 11px 4px;
+        padding: 0 15px;
+        line-height: 27px;
+    }
+
+    .btnimage:hover{
+        border-color: #dadce0;
+        box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+        cursor:pointer;
+    }
+
+    .emptybox {
+        display: block;
+        height: 10em;
+    }
+
+    .australia {
+        display:block;
+        padding: 1em;
+        color: rgba(0,0,0,.54);
+        background-color: #f2f2f2;
+        width: 100%;
+        font-family: arial,sans-serif;
+        border-bottom: 1px solid #dadce0;
+        padding-left: 40px;
+        font-size: 15px;
+
+    }
+    .footer{
+        display: flex;
+        padding:1em;
+        color: rgba(0,0,0,.54);
+        background-color: #f2f2f2;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        
+    }
+
+
+    .leftfooter {
+        justify-content: left;
+        padding: 10px;
+    }
+
+    .rightfooter {
+        justify-content: right;
+        padding: 10px;
+    }
+
+    .pagewrap {
+        flex-grow:1;
+    }
+
+    .flexcolumn {
+        display:flex;
+        flex-direction: column;
+        min-height: 100vh;
+        max-width: 100vw;
+       
+    }
+
+    span {
+        font-family: arial,sans-serif;
+        padding: 30px;
+        font-size: 14px;
+    }
+
+</style>
+<html>
+    <head>
+        <body>
+            <div class="flexcolumn">
+                <ul>
+                    <li><a class="about" href="https://about.google/?fg=1&utm_source=google-AU&utm_medium=referral&utm_campaign=hp-header">About</a></li> 
+                     <li><a class="floatleft" href="https://store.google.com/AU/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-AU">Store</a></li>
+                     <li><img class="profile" src="outline_account_circle_black_24dp.png"/></li>
+                     <li><img class="rightnavicons" src="outline_apps_black_24dp.png"/></li>
+                     <li><a class="floatright" href="https://www.google.com.au/imghp?hl=en&authuser=0&ogbl">Images</a></li>
+                     <li><a class="floatright" href="https://mail.google.com/">Gmail</a></li> 
+                 </ul>
+                 <div class="pagewrap">
+                     <div class="centre">
+                         <img class="foogle" src="https://cdn.statically.io/gh/TheOdinProject/curriculum/284f0cdc998be7e4751e29e8458323ad5d320303/foundations/the_front_end/project_html_css/imgs/00.png">
+                     </div>
+                     <div>
+                        <div class="search" >
+                            <input class="searchbar" type="text">
+                            <img class="searchicon" src="outline_search_black_24dp.png">
+                            <img class="mic" src="outline_mic_black_24dp.png">
+                        </div>
+                     </div>
+                     <div class="btn"> 
+                         <button class="btnimage">Google Search</button>
+                         <button class="btnimage">I'm Feeling Lucky</button>
+                     </div>
+            
+                 </div>
+     
+                 <div class="australia">
+                     <footer>Australia</footer>
+                 </div>
+                 <div class="footer">
+                    <div>
+                        <span>Advertising</span>
+                        <span>Business</span>
+                        <span>How Search Works</span>                     
+                    </div>
+                    <div>
+                        <span>Privacy</span>
+                        <span>Terms</span>
+                        <span>Settings</span>
+                    </div>
+
+                 </div>
+            </div>
+
+
+        </body>
+    </head>
+</html>
